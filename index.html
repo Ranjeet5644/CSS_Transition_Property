@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+
+            background-color: aqua;
+            height: 234px;
+            width: 234px;
+        }
+
+        .box {
+            background-color: bisque;
+            height: 55px;
+            width: 55px;
+           /* transition-property:background-color , transform;
+            transition-duration:3s ;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s; */
+
+            transition: all 3s cubic-bezier(0.04, 1.19, 1, 1) 1s ;
+
+        }
+        .translate{
+
+transform:translateX(10vw) translateY(10vh);
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+
+
+    </div>
+</body>
+
+</html>
